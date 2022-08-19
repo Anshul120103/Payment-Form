@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./CSS/CSS-for-payment-form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="backend.php">
+            <h1>Payment Form</h1>
+            <hr>
+            <!--Contact information-->
+
+            <h2>Contact information</h2>
+            <p> Name:<input type="text" name="myName" required placeholder="Anshul Agarwal"></p>
+            <p>Gender: Male<input type="radio" name="gender"> Female <input type="radio" name="gender" required></p>
+            <p>Address: </p>
+            <p> <textarea name="address" cols="30" rows="10" required placeholder="Enter Your Address"></textarea></p>
+            <p> Email: <input type="email" name="email" required placeholder="anshul@gmail.com"></p>
+            <p>Pincode: <input type="number" name=pincode required placeholder="395007"></p>
+
+            <!--Payment information-->
+
+            <h2>Payment information</h2>
+            <p>Card type:
+                <br>
+                <img src="./Multimedia/Yes-Bank.jpg" alt="">
+                <img src="./Multimedia/Visa.jpg" alt="">
+                <img src="./Multimedia/VISA2.jpg" alt="">
+                <img src="./Multimedia/MasterCard.jpg" alt="">
+            </p>
+            <select name="cardtype" id="cardtype" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="Credit">Credit</option>
+                <option value="Debit">Debit</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+            <p>Card Number: <input type="number" name="cardnumber" id="cardnumber" required
+                    placeholder="1111-2222-3333-4444"></p>
+            <p>Expiry Date: <input type="date" name="date" id="date" placeholder="dd/mm/yy" required></p>
+            <p>cvv: <input type="password" name="cvv" id="cvv" required></p>
+            <input type="submit" value="Pay Now" >
+        </form>
+    </div>
+
+</body>
+
+</html>
